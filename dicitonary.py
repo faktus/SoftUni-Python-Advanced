@@ -2,7 +2,7 @@ def store_words(notebook, input_str):
     words_and_definitions = input_str.split(" | ")
     for item in words_and_definitions:
         word, definition = item.split(": ")
-        if word in notebook:
+        if word in notebook: 
             notebook[word].append(definition)
         else:
             notebook[word] = [definition]
